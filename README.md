@@ -3,7 +3,6 @@
 
 A modern, comprehensive ship maintenance management system built with React, TypeScript, and Tailwind CSS. This dashboard provides real-time insights into maritime operations, helping manage ships, components, maintenance jobs, and crew efficiently.
 
-![Ship Management Dashboard](public/ship-background.jpg)
 
 ## ✨ Features
 
