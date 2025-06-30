@@ -113,8 +113,8 @@ const Calendar: React.FC = () => {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Maintenance Calendar</h1>
-          <p className="text-gray-600 mt-1">Schedule and track maintenance jobs</p>
+                      <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Maintenance Calendar</h1>
+          <p className="text-gray-600 dark:text-gray-300 mt-1">Schedule and track maintenance jobs</p>
         </div>
         {canCreateJobs && (
           <button
@@ -229,13 +229,13 @@ const Calendar: React.FC = () => {
                           <div className={`w-2 h-2 rounded-full ${priorityColors[job.priority]}`}></div>
                           <span className="truncate">{job.type}</span>
                         </div>
-                        <div className="text-gray-500 truncate">{ship?.name}</div>
+                        <div className="text-gray-500 dark:text-gray-400 truncate">{ship?.name}</div>
                       </div>
                     );
                   })}
                   
                   {dayJobs.length > (view === 'month' ? 3 : 5) && (
-                    <div className="text-xs text-gray-500 text-center">
+                    <div className="text-xs text-gray-500 dark:text-gray-400 text-center">
                       +{dayJobs.length - (view === 'month' ? 3 : 5)} more
                     </div>
                   )}
@@ -256,7 +256,7 @@ const Calendar: React.FC = () => {
           {getJobsForDate(selectedDate).length === 0 ? (
             <div className="text-center py-8">
               <CalendarIcon size={48} className="mx-auto text-gray-300 mb-4" />
-              <p className="text-gray-500">No jobs scheduled for this date</p>
+              <p className="text-gray-500 dark:text-gray-400">No jobs scheduled for this date</p>
               {canCreateJobs && (
                 <button
                   onClick={() => setShowModal(true)}

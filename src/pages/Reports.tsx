@@ -75,9 +75,9 @@ const Reports: React.FC = () => {
       <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-sm font-medium text-gray-600">{title}</p>
+            <p className="text-sm font-medium text-gray-600 dark:text-gray-300">{title}</p>
             <p className={`text-2xl font-bold ${color}`}>{value}</p>
-            {subtitle && <p className="text-xs text-gray-500 mt-1">{subtitle}</p>}
+                          {subtitle && <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">{subtitle}</p>}
           </div>
           <div className={`h-12 w-12 ${iconBg} rounded-lg flex items-center justify-center`}>
             <Icon size={24} className="text-white" />
@@ -121,8 +121,8 @@ const Reports: React.FC = () => {
     <div className="space-y-6">
       {/* Header */}
       <div>
-        <h1 className="text-2xl font-bold text-gray-900">Reports & Analytics</h1>
-        <p className="text-gray-600 mt-1">Comprehensive overview of maintenance operations</p>
+                  <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Reports & Analytics</h1>
+        <p className="text-gray-600 dark:text-gray-300 mt-1">Comprehensive overview of maintenance operations</p>
       </div>
 
       {/* Key Metrics */}
@@ -221,7 +221,7 @@ const Reports: React.FC = () => {
           </div>
           <div className="p-6">
             {recentCompletedJobs.length === 0 ? (
-              <p className="text-gray-500 text-center py-4">No completed jobs</p>
+              <p className="text-gray-500 dark:text-gray-400 text-center py-4">No completed jobs</p>
             ) : (
               <div className="space-y-4">
                 {recentCompletedJobs.map((job) => {
@@ -262,7 +262,7 @@ const Reports: React.FC = () => {
           </div>
           <div className="p-6">
             {shipJobCounts.length === 0 ? (
-              <p className="text-gray-500 text-center py-4">No job data available</p>
+                              <p className="text-gray-500 dark:text-gray-400 text-center py-4">No job data available</p>
             ) : (
               <div className="space-y-4">
                 {shipJobCounts.map(({ ship, jobCount, activeJobs }) => (

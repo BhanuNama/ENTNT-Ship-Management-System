@@ -138,7 +138,7 @@ const ShipDetail: React.FC = () => {
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-gray-600">Components</p>
+                              <p className="text-sm font-medium text-gray-600 dark:text-gray-300">Components</p>
               <p className="text-2xl font-bold text-gray-900">{shipComponents.length}</p>
             </div>
             <div className="h-12 w-12 bg-blue-600 rounded-lg flex items-center justify-center">
@@ -150,7 +150,7 @@ const ShipDetail: React.FC = () => {
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-gray-600">Active Jobs</p>
+                              <p className="text-sm font-medium text-gray-600 dark:text-gray-300">Active Jobs</p>
               <p className="text-2xl font-bold text-gray-900">
                 {shipJobs.filter(j => j.status === 'Open' || j.status === 'In Progress').length}
               </p>
@@ -164,7 +164,7 @@ const ShipDetail: React.FC = () => {
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-gray-600">Critical Components</p>
+                              <p className="text-sm font-medium text-gray-600 dark:text-gray-300">Critical Components</p>
               <p className="text-2xl font-bold text-red-600">
                 {shipComponents.filter(c => c.status === 'Critical').length}
               </p>
@@ -178,7 +178,7 @@ const ShipDetail: React.FC = () => {
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-gray-600">Completed Jobs</p>
+                              <p className="text-sm font-medium text-gray-600 dark:text-gray-300">Completed Jobs</p>
               <p className="text-2xl font-bold text-green-600">
                 {shipJobs.filter(j => j.status === 'Completed').length}
               </p>
@@ -285,7 +285,7 @@ const ShipDetail: React.FC = () => {
                   );
                 })}
               {shipJobs.length === 0 && (
-                <p className="text-gray-500 text-center py-4">No recent activity</p>
+                <p className="text-gray-500 dark:text-gray-400 text-center py-4">No recent activity</p>
               )}
             </div>
           </div>
@@ -314,7 +314,7 @@ const ShipDetail: React.FC = () => {
               <div className="text-center py-8">
                 <Settings size={48} className="mx-auto text-gray-300 mb-4" />
                 <h3 className="text-lg font-medium text-gray-900 mb-2">No components found</h3>
-                <p className="text-gray-500 mb-4">Add components to track their maintenance</p>
+                <p className="text-gray-500 dark:text-gray-400 mb-4">Add components to track their maintenance</p>
                 {canManage && (
                   <button
                     onClick={() => setShowComponentModal(true)}
@@ -342,7 +342,7 @@ const ShipDetail: React.FC = () => {
                         </span>
                       </div>
 
-                      <div className="space-y-2 text-sm text-gray-600 mb-4">
+                      <div className="space-y-2 text-sm text-gray-600 dark:text-gray-300 mb-4">
                         <div className="flex justify-between">
                           <span>Serial:</span>
                           <span>{component.serialNumber}</span>
@@ -438,7 +438,7 @@ const ShipDetail: React.FC = () => {
               <div className="text-center py-8">
                 <Calendar size={48} className="mx-auto text-gray-300 mb-4" />
                 <h3 className="text-lg font-medium text-gray-900 mb-2">No maintenance history</h3>
-                <p className="text-gray-500">Maintenance jobs will appear here once created</p>
+                <p className="text-gray-500 dark:text-gray-400">Maintenance jobs will appear here once created</p>
               </div>
             ) : (
               <div className="space-y-4">

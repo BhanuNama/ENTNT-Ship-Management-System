@@ -132,8 +132,8 @@ const Ships: React.FC = () => {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="font-header text-display-xl text-gray-900">Ships Management</h1>
-          <p className="font-body text-gray-600 mt-1">Manage your fleet of ships and their information</p>
+                      <h1 className="font-header text-display-xl text-gray-900 dark:text-white">Ships Management</h1>
+          <p className="font-body text-gray-600 dark:text-gray-300 mt-1">Manage your fleet of ships and their information</p>
         </div>
         {canManageShips && (
           <button
@@ -279,7 +279,7 @@ const Ships: React.FC = () => {
         <div className="text-center py-12">
           <Ship size={48} className="mx-auto text-gray-300 mb-4" />
           <h3 className="font-header text-display-md text-gray-900 mb-2">No ships found</h3>
-          <p className="font-body text-gray-500 mb-4">
+                          <p className="font-body text-gray-500 dark:text-gray-400 mb-4">
             {searchTerm || statusFilter !== 'All' 
               ? 'Try adjusting your search criteria'
               : 'Get started by adding your first ship'}

@@ -48,8 +48,8 @@ const Jobs: React.FC = () => {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="font-header text-display-xl text-gray-900">Maintenance Jobs</h1>
-          <p className="font-body text-gray-600 mt-1">Manage and track maintenance work orders</p>
+                      <h1 className="font-header text-display-xl text-gray-900 dark:text-white">Maintenance Jobs</h1>
+          <p className="font-body text-gray-600 dark:text-gray-300 mt-1">Manage and track maintenance work orders</p>
         </div>
         {canCreateJobs && (
           <button
@@ -198,7 +198,7 @@ const Jobs: React.FC = () => {
         <div className="text-center py-12">
           <Settings size={48} className="mx-auto text-gray-300 mb-4" />
           <h3 className="font-header text-display-md text-gray-900 mb-2">No jobs found</h3>
-          <p className="font-body text-gray-500 mb-4">
+                          <p className="font-body text-gray-500 dark:text-gray-400 mb-4">
             {searchTerm || statusFilter !== 'All' || priorityFilter !== 'All' || shipFilter !== 'All'
               ? 'Try adjusting your search criteria'
               : 'Get started by creating your first maintenance job'}

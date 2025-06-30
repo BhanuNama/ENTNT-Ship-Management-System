@@ -13,7 +13,7 @@ const Users: React.FC = () => {
       <div className="text-center py-12">
         <Shield size={48} className="mx-auto text-gray-300 mb-4" />
         <h3 className="text-lg font-medium text-gray-900 mb-2">Access Denied</h3>
-        <p className="text-gray-500">You don't have permission to view this page.</p>
+        <p className="text-gray-500 dark:text-gray-400">You don't have permission to view this page.</p>
       </div>
     );
   }
@@ -34,8 +34,8 @@ const Users: React.FC = () => {
     <div className="space-y-6">
       {/* Header */}
       <div>
-        <h1 className="text-2xl font-bold text-gray-900">User Management</h1>
-        <p className="text-gray-600 mt-1">Manage system users and their roles</p>
+        <h1 className="text-2xl font-bold text-gray-900 dark:text-white">User Management</h1>
+        <p className="text-gray-600 dark:text-gray-300 mt-1">Manage system users and their roles</p>
       </div>
 
       {/* Stats */}
@@ -43,7 +43,7 @@ const Users: React.FC = () => {
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-gray-600">Total Users</p>
+              <p className="text-sm font-medium text-gray-600 dark:text-gray-300">Total Users</p>
               <p className="text-2xl font-bold text-gray-900">{users.length}</p>
             </div>
             <div className="h-12 w-12 bg-gray-600 rounded-lg flex items-center justify-center">
@@ -55,7 +55,7 @@ const Users: React.FC = () => {
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-gray-600">Engineers</p>
+              <p className="text-sm font-medium text-gray-600 dark:text-gray-300">Engineers</p>
               <p className="text-2xl font-bold text-green-600">
                 {users.filter(u => u.role === 'Engineer').length}
               </p>
@@ -69,7 +69,7 @@ const Users: React.FC = () => {
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-gray-600">Inspectors</p>
+              <p className="text-sm font-medium text-gray-600 dark:text-gray-300">Inspectors</p>
               <p className="text-2xl font-bold text-blue-600">
                 {users.filter(u => u.role === 'Inspector').length}
               </p>
