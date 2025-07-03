@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🚢 ENTNT Ship Management System
 
 A comprehensive, modern web-based ship management dashboard built for maritime operations. This system provides real-time monitoring, maintenance scheduling, and operational oversight for ship fleets with an intuitive, responsive interface.
@@ -7,6 +6,10 @@ A comprehensive, modern web-based ship management dashboard built for maritime o
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-5.4.2-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.4.1-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+## 🌐 Live Demo
+
+Experience the live application here: [https://entnt-ship-management-bhanunama.netlify.app/](https://entnt-ship-management-bhanunama.netlify.app/)
 
 ## 🏗️ System Architecture
 
